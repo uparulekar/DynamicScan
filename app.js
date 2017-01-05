@@ -9,7 +9,7 @@ EJS.open = "<ejs>";
 EJS.close = "</ejs>";
 
 var host = (process.env.VCAP_APP_HOST || 'localhost');
-var port = (process.env.VCAP_APP_PORT || 3456);
+var port = (process.env.PORT || 3456);
 var url = require('url').format({hostname: host, port: port, protocol: 'http'});
 
 var app = express();
